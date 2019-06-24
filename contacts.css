@@ -1,0 +1,14 @@
+body {
+	background-color: #8FBC8F;
+}
+
+#container {
+	background-color: white;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#epage {
+	color: red;
+}
