@@ -12,19 +12,7 @@
 		<div id="content">
 			<div id="main">
 				<h2>Enter New Contact</h2>
-				<!--h1>Saved Contacts</h1>
-				<table id="contacts">
-					<tr id="contactsHeader">
-						<th>NO</th>
-						<th>First Name</th>
-						<th>Second Name</th>
-						<th>Phone Number</th>
-						<th>Email</th>
-						<th>Address</th>
-						<th>Actions</th>
-					</tr>
-				</table!-->
-				<form name="myForm" action="" onsubmit="return addContact()" method="post" id="myForm">
+				<!--form name="myForm" action="" onsubmit="return validateForm()" method="post" id="myForm"!-->
 					<p>First Name: <input type="text" name="fname" id="firstName"></p>
 					<p>Second Name: <input type="text" name="sname" id="secondName"></p>
 					<p>Phone Number: <input type="text" name="pnumber" id="phoneNumber"></p>
@@ -34,18 +22,21 @@
 						City: <input type="text" name="city" id="address">
 						Country: <input type="text" name="country" id="address">
 					</p>
-					<input type="submit" value="Submit">
-					<p><input type="text" name="", placeholder="search here"></p>
-				</form>
-				<!--form>First Name</form>
-				<p><input type="text" value=""></p>
-				<form>Second Name</form>
-				<p><input type="text" name=""></p!-->
-					<div id="epage"></div>
+					<input type="submit" value="Submit" onclick="return validateForm()">
+					
+				<!--/form!-->
+				<div id="epage"></div>
+				<div >
+					<h2>Search Contact</h2>
+					<input type="text">
+					<input type="submit", name="Search" onclick="searchContacts()" id="searchPhrase">
+					<p><strong>Contacts Found</strong></p>
+					<p id="result"></p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script src="contacts.js"></script>
+	<script src="js/contacts.js"></script>
 
 </body>
 </html>
