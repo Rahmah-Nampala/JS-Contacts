@@ -24,7 +24,7 @@ var allContacts = [];
 		else {
 			var contact1 = [fname, sname, pnumber, email, address];
 			allContacts.push(contact1);
-			//console.log(allContacts[0]);
+			console.log(allContacts[0]);
 		}
 	};
 	
